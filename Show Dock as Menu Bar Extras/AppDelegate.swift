@@ -132,10 +132,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    @objc func terminateApp() {
-        NSApplication.shared.terminate(self)
-    }
-    
     func openApp(withBundleId bundleId: String) {
         let task = Process()
         task.launchPath = "/usr/bin/env"
