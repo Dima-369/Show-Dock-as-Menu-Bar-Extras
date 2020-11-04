@@ -12,23 +12,6 @@
 		437FCE0825535A30000D381C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437FCE0625535A30000D381C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		437FCE1025535A30000D381C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 437FCDF525535A30000D381C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 437FCDFC25535A30000D381C;
-			remoteInfo = "Show Dock as Menu Bar Extras";
-		};
-		437FCE1B25535A30000D381C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 437FCDF525535A30000D381C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 437FCDFC25535A30000D381C;
-			remoteInfo = "Show Dock as Menu Bar Extras";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		437FCDFD25535A30000D381C /* Show Dock as Menu Bar Extras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show Dock as Menu Bar Extras.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437FCE0025535A30000D381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,26 +19,10 @@
 		437FCE0725535A30000D381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		437FCE0925535A30000D381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437FCE0A25535A30000D381C /* Show_Dock_as_Menu_Bar_Extras.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Show_Dock_as_Menu_Bar_Extras.entitlements; sourceTree = "<group>"; };
-		437FCE0F25535A30000D381C /* Show Dock as Menu Bar ExtrasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Show Dock as Menu Bar ExtrasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		437FCE1A25535A30000D381C /* Show Dock as Menu Bar ExtrasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Show Dock as Menu Bar ExtrasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		437FCDFA25535A30000D381C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		437FCE0C25535A30000D381C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		437FCE1725535A30000D381C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,8 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				437FCDFD25535A30000D381C /* Show Dock as Menu Bar Extras.app */,
-				437FCE0F25535A30000D381C /* Show Dock as Menu Bar ExtrasTests.xctest */,
-				437FCE1A25535A30000D381C /* Show Dock as Menu Bar ExtrasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,42 +80,6 @@
 			productReference = 437FCDFD25535A30000D381C /* Show Dock as Menu Bar Extras.app */;
 			productType = "com.apple.product-type.application";
 		};
-		437FCE0E25535A30000D381C /* Show Dock as Menu Bar ExtrasTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 437FCE2625535A30000D381C /* Build configuration list for PBXNativeTarget "Show Dock as Menu Bar ExtrasTests" */;
-			buildPhases = (
-				437FCE0B25535A30000D381C /* Sources */,
-				437FCE0C25535A30000D381C /* Frameworks */,
-				437FCE0D25535A30000D381C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				437FCE1125535A30000D381C /* PBXTargetDependency */,
-			);
-			name = "Show Dock as Menu Bar ExtrasTests";
-			productName = "Show Dock as Menu Bar ExtrasTests";
-			productReference = 437FCE0F25535A30000D381C /* Show Dock as Menu Bar ExtrasTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		437FCE1925535A30000D381C /* Show Dock as Menu Bar ExtrasUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 437FCE2925535A30000D381C /* Build configuration list for PBXNativeTarget "Show Dock as Menu Bar ExtrasUITests" */;
-			buildPhases = (
-				437FCE1625535A30000D381C /* Sources */,
-				437FCE1725535A30000D381C /* Frameworks */,
-				437FCE1825535A30000D381C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				437FCE1C25535A30000D381C /* PBXTargetDependency */,
-			);
-			name = "Show Dock as Menu Bar ExtrasUITests";
-			productName = "Show Dock as Menu Bar ExtrasUITests";
-			productReference = 437FCE1A25535A30000D381C /* Show Dock as Menu Bar ExtrasUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,16 +93,6 @@
 					437FCDFC25535A30000D381C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-					};
-					437FCE0E25535A30000D381C = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 437FCDFC25535A30000D381C;
-					};
-					437FCE1925535A30000D381C = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 437FCDFC25535A30000D381C;
 					};
 				};
 			};
@@ -191,8 +110,6 @@
 			projectRoot = "";
 			targets = (
 				437FCDFC25535A30000D381C /* Show Dock as Menu Bar Extras */,
-				437FCE0E25535A30000D381C /* Show Dock as Menu Bar ExtrasTests */,
-				437FCE1925535A30000D381C /* Show Dock as Menu Bar ExtrasUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,20 +124,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		437FCE0D25535A30000D381C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		437FCE1825535A30000D381C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		437FCE0B25535A30000D381C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		437FCE1625535A30000D381C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		437FCE1125535A30000D381C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 437FCDFC25535A30000D381C /* Show Dock as Menu Bar Extras */;
-			targetProxy = 437FCE1025535A30000D381C /* PBXContainerItemProxy */;
-		};
-		437FCE1C25535A30000D381C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 437FCDFC25535A30000D381C /* Show Dock as Menu Bar Extras */;
-			targetProxy = 437FCE1B25535A30000D381C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		437FCE0625535A30000D381C /* Main.storyboard */ = {
@@ -323,7 +199,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -374,6 +250,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
@@ -409,68 +286,6 @@
 			};
 			name = Release;
 		};
-		437FCE2725535A30000D381C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Show Dock as Menu Bar ExtrasTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "menu.Show-Dock-as-Menu-Bar-ExtrasTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Show Dock as Menu Bar Extras.app/Contents/MacOS/Show Dock as Menu Bar Extras";
-			};
-			name = Debug;
-		};
-		437FCE2825535A30000D381C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Show Dock as Menu Bar ExtrasTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "menu.Show-Dock-as-Menu-Bar-ExtrasTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Show Dock as Menu Bar Extras.app/Contents/MacOS/Show Dock as Menu Bar Extras";
-			};
-			name = Release;
-		};
-		437FCE2A25535A30000D381C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Show Dock as Menu Bar ExtrasUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "menu.Show-Dock-as-Menu-Bar-ExtrasUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Show Dock as Menu Bar Extras";
-			};
-			name = Debug;
-		};
-		437FCE2B25535A30000D381C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Show Dock as Menu Bar ExtrasUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "menu.Show-Dock-as-Menu-Bar-ExtrasUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Show Dock as Menu Bar Extras";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,24 +303,6 @@
 			buildConfigurations = (
 				437FCE2425535A30000D381C /* Debug */,
 				437FCE2525535A30000D381C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		437FCE2625535A30000D381C /* Build configuration list for PBXNativeTarget "Show Dock as Menu Bar ExtrasTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				437FCE2725535A30000D381C /* Debug */,
-				437FCE2825535A30000D381C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		437FCE2925535A30000D381C /* Build configuration list for PBXNativeTarget "Show Dock as Menu Bar ExtrasUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				437FCE2A25535A30000D381C /* Debug */,
-				437FCE2B25535A30000D381C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

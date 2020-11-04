@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusBarItems: [NSStatusItem] = []
     
-    let iconSize = 18
+    let iconSize = 19
     let itemSlotWidth = 30
     let menuBarHeight = 22
     
