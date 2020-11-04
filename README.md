@@ -1,3 +1,5 @@
+![screenshot of app](https://github.com/Gira-X/Show-Dock-as-Menu-Bar-Extras/raw/master/screenshot.png)
+
 Based on https://github.com/EthanSK/Menu-Bar-Dock
 
 The app image tinting in the menu bar only works when the dark mode menu bar is enabled which I have enabled
