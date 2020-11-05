@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusBarItems: [NSStatusItem] = []
     
-    let iconSize = 19
+    let iconSize = 18
     let itemSlotWidth = 30
     
     // todo display warning in menu when emacs is not running?
@@ -96,7 +96,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let view = NSImageView(frame: NSRect(
             x: (itemSlotWidth - iconSize) / 2,
-            y: 1,
+            y: 2,
             width: iconSize, height: iconSize))
         
         view.image = statusBarItemIconBase
