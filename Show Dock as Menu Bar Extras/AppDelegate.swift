@@ -97,7 +97,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let view = NSImageView(frame: NSRect(
             x: (itemSlotWidth - iconSize) / 2,
             y: 2,
-            width: iconSize, height: iconSize))
+            width: iconSize, height: iconSize + 1))
         
         view.image = statusBarItemIconBase
         view.wantsLayer = true
