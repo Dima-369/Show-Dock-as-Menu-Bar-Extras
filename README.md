@@ -8,5 +8,5 @@ It is also possible that this looks weird for other macOS versions, but for me i
 
 A left click in the menu brings the app to the foreground and a right click terminates the app.
 
-Telegram, Emacs, iTerm2, Finder are also not shown in the menu bar because I always launch
+Telegram, Emacs, iTerm2, Firefox and Finder are also not shown in the menu bar because I always launch
 them via Hammerspoon bindings and those icons just clutter up the menu bar for me.

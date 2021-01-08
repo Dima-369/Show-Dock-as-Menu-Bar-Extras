@@ -26,7 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 $0.localizedName! != "Telegram" &&
                 $0.localizedName! != "Emacs" &&
                 $0.localizedName! != "iTerm2" &&
-                $0.localizedName! != "Finder"
+                $0.localizedName! != "Finder" &&
+                $0.localizedName! != "Firefox"
         }
     }
     
