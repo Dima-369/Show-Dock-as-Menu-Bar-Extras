@@ -18,8 +18,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var ignoredApplications: [String] = []
     
-    // todo display warning in menu when emacs is not running?
-    
     public var runningApps: [NSRunningApplication] {
         return NSWorkspace.shared.runningApplications.filter {
             // filtered out they are always accessed through Hammerspoon bindings
