@@ -16,22 +16,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let iconSize = 18
     let itemSlotWidth = 30
     
+    var ignoredApplications: [String] = []
+    
     // todo display warning in menu when emacs is not running?
     
     public var runningApps: [NSRunningApplication] {
-        return NSWorkspace.shared.runningApplications.filter{
-            // these applications are filtered out because I always launch
-            // them via Hammerspoon bindings
+        return NSWorkspace.shared.runningApplications.filter {
+            // filtered out they are always accessed through Hammerspoon bindings
             $0.activationPolicy == .regular &&
-                $0.localizedName! != "Telegram" &&
-                $0.localizedName! != "Emacs" &&
-                $0.localizedName! != "iTerm2" &&
-                $0.localizedName! != "Finder" &&
-                $0.localizedName! != "Firefox"
+                !ignoredApplications.contains($0.localizedName!)
         }
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let file: FileHandle? = FileHandle(forReadingAtPath: "/Users/Gira/dotfiles/dock-ignored.txt")
+        if file != nil {
+            let data = file!.readDataToEndOfFile()
+            file!.closeFile()
+
+            let str = String(decoding: data, as: UTF8.self)
+            ignoredApplications = str.split(separator: "\n").map(String.init)
+        } else {
+            print("Can't load dock-ignored.txt!")
+        }
+        
         trackAppsBeingActivated()
         trackAppsBeingQuit()
         
