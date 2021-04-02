@@ -31,20 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    // this only works when the dark menu bar is used in macOS
-    func imageForBlackMenuBar(_ image: NSImage) -> NSImage {
-        guard let tinted = image.copy() as? NSImage else { return image }
-        tinted.lockFocus()
-        
-        NSColor.init(white: 0.0, alpha: 0.98).set()
-        
-        let imageRect = NSRect(origin: NSZeroPoint, size: image.size)
-        imageRect.fill(using: NSCompositingOperation.hue)
-        
-        tinted.unlockFocus()
-        return tinted
-    }
-    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         trackAppsBeingActivated()
         trackAppsBeingQuit()
@@ -93,7 +79,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func createNewMenuItem(_ app: NSRunningApplication) {
         let statusBar = NSStatusBar.system
         let statusBarItem = statusBar.statusItem(withLength: NSStatusItem.squareLength)
-        let statusBarItemIconBase = imageForBlackMenuBar(app.icon!)
+        let statusBarItemIconBase = app.icon!
         
         let view = NSImageView(frame: NSRect(
             x: (itemSlotWidth - iconSize) / 2,
